@@ -11,21 +11,21 @@ Instructions
 4. Create a pull request from your `true_dev` branch to the master branch.
 5. Reply to the thread you're having with our HR department telling them we can start reviewing your code
 
-
 # How to run the project locally without docker.
 N.B The code is written using python v3.6 above and doesn't have any external dependencies.
 
 - Clone the project and cd into the root directory.
 - Run the  command `python .\main.py` while in the project directory
+- The program will output a json file with results in the root directory called ` output.json `.
 
 # How to run the project with docker.
 - Clone the project and ` cd into the root directory of the project `.
 - Build the docker image ` docker build -t stats_dev_test`.
 - Run the build docker image using ` docker run -t stats_dev_test`
+- The program will output a json file with results in the root directory called ` output.json `.
 
 # How to run the project test.
 - Run the  command `python .\app\file_processor_test.py` while in the project directory.
-
 
 Given
 -----
