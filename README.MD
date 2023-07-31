@@ -11,6 +11,22 @@ Instructions
 4. Create a pull request from your `true_dev` branch to the master branch.
 5. Reply to the thread you're having with our HR department telling them we can start reviewing your code
 
+
+# How to run the project locally without docker.
+N.B The code is written using python v3.6 above and doesn't have any external dependencies.
+
+- Clone the project and cd into the root directory.
+- Run the  command `python .\main.py` while in the project directory
+
+# How to run the project with docker.
+- Clone the project and ` cd into the root directory of the project `.
+- Build the docker image ` docker build -t stats_dev_test`.
+- Run the build docker image using ` docker run -t stats_dev_test`
+
+# How to run the project test.
+- Run the  command `python .\app\file_processor_test.py` while in the project directory.
+
+
 Given
 -----
 
@@ -81,21 +97,3 @@ Generate a JSON file of the following format:
     ]
 }
 ```
-
-Review Criteria
----
-
-We expect that the assignment will not take more than 2-3 hours of work. In our judgement we rely on common sense
-and do not expect production ready code. We are rather instrested in your problem solving skills and command of the programming language that you chose.
-
-It worth mentioning that we will be testing your submission against different input data sets.
-
-__General criteria from most important to less important__:
-
-1. Functional and non-functional requirements are met.
-2. Prefer application efficiency over code organisation complexity.
-3. Code is readable and comprehensible. Setup instructions and run instructions are provided.
-4. Tests showcased are a plus (_no need to cover everything_).
-5. Supporting notes on taken decisions and further clarifications are welcome.
-6. Avoid use of web frameworks. 
-7. Avoid use of scripting langauges for example JAVASCRIPT.
